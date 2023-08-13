@@ -1,0 +1,41 @@
+.hero-hover:hover {
+  color: $light-green-color;
+}
+
+.hero-under {
+  position: relative;
+  &::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: $light-green-color;
+    bottom: -5px;
+    transition: 0.4s;
+    border: 0;
+  }
+  &:hover::before {
+    width: 100%;
+  }
+}
+.btn {
+  color: $white-color;
+  font-family: $body-ff;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: $body-fw;
+  line-height: 1.625;
+  width: 117px;
+  height: 26px;
+  margin-top: 25px;
+}
+button {
+  color: $white-color;
+  font-family: $body-ff;
+  font-size: 1.6rem;
+  font-weight: $body-fw;
+  line-height: 1.625;
+  letter-spacing: 0.22rem;
+  text-align: left;
+}
